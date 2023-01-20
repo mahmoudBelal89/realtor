@@ -46,7 +46,7 @@ export default function SignUp() {
       navigate("/");
       toast.success("Sign up complete!");
     } catch (error) {
-      toast.error("something went wrong with registration!");
+      toast.error(error.toString());
     }
   }
   return (
